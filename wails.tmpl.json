@@ -1,0 +1,27 @@
+{
+  "$schema": "https://wails.io/schemas/config.v2.json",
+  "name": "{{.ProjectName}}",
+  "outputfilename": "{{.BinaryName}}",
+  "frontend:install": "just install dependencies",
+  "frontend:build": "just build frontend",
+  "frontend:dev:watcher": "just dev frontend",
+  "frontend:dev:serverUrl": "auto",
+  "build:dir": "target",
+  "preBuildHooks": {
+    "move-build": "mv build/ target/"
+  },
+  "preDevHooks": {
+    "move-build-dev": "mv build/ target/"
+  },
+  "author": {
+    "name": "{{.AuthorName}}",
+    "email": "{{.AuthorEmail}}"
+  },
+  "info": {
+    "productVersion": "0.0.0-dev",
+    "companyName": "{{.ProjectName}}",
+    "productName": "{{.ProjectName}}",
+    "copyright": "Copyright {{.AuthorName}} ({{.AuthorEmail}})",
+    "comments": "Built using Wails (https://wails.app)"
+  }
+}

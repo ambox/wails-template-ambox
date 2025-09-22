@@ -1,0 +1,8 @@
+version: "2"
+packages:
+  - name: "{{.ProjectName}}"
+    engine: "sqlite"
+    path: "backend/database"
+    schema: "backend/database/schema.sql"
+    queries: "backend/database/queries.sql"
+    emit_json_tags: true

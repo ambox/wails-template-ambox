@@ -1,0 +1,49 @@
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# ░░░░ .editorconfig
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# @see http://EditorConfig.org/
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+root = true
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# ░░░░ Standard
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[*]
+charset = utf-8
+indent_size = 2
+indent_style = tab
+quote_type = single
+spaces_in_brackets = true
+spaces_around_operators = true
+space_after_control_statements = true
+space_after_anonymous_functions = true
+curly_bracket_next_line = false
+trim_trailing_whitespace = true
+insert_final_newline = true
+end_of_line = lf
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# ░░░░ Exceptions
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[*.go]
+quote_type = double
+
+[*.{diff,markdown,md,man}]
+trim_trailing_whitespace = false
+indent_style = space
+
+[*.{toml,yaml,yml,json,just}]
+indent_style = space
+quote_type = double
+
+[.justfile]
+indent_style = space
+quote_type = double
+
+[COMMIT_EDITMSG]
+max_line_length = 0
+indent_style = space
+

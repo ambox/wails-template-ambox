@@ -1,0 +1,7 @@
+{
+  "name": "Wails + Next + Tailwind + shadcn/ui + TypeScript + Just",
+  "shortname": "ambox",
+  "author": "adriancmiranda",
+  "description": "A wails template for Ambox",
+  "helpurl": "https://github.com/ambox/wails-template-ambox"
+}
